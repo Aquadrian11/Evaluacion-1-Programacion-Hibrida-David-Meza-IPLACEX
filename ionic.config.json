@@ -1,0 +1,7 @@
+{
+  "name": "Calcular-Perimetro-Figuras-Geometricas-App",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular-standalone"
+}
