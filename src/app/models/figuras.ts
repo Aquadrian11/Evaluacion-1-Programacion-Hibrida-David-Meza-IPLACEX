@@ -37,3 +37,10 @@ export class TrianguloEscaleno extends FiguraGeometrica {
         return this.ladoA + this.ladoB + this.ladoC;
     }
 }
+
+export class TrianguloEquilatero extends TrianguloEscaleno {
+    constructor(ladoA: number) {
+        super(ladoA, ladoA, ladoA);
+        this.nombre = 'Triángulo Equilátero';
+    }
+}
