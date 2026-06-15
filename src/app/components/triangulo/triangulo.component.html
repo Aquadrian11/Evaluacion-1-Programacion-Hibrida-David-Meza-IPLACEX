@@ -1,0 +1,30 @@
+<ion-card>
+  <ion-card-header>
+    <ion-card-title>Triángulo Escaleno</ion-card-title>
+  </ion-card-header>
+
+  <ion-card-content>
+    <p>El perímetro de un triángulo es la suma de las longitudes de sus tres lados.</p>
+    <img src="assets/img/triangulo-info.png" alt="Información Triángulo" style="max-width: 750px; display: block; margin: 10px auto;"/>
+
+    <ion-item>
+      <ion-input label="Lado A (cm)" type="number" [(ngModel)]="ladoA"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-input label="Lado B (cm)" type="number" [(ngModel)]="ladoB"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-input label="Lado C (cm)" type="number" [(ngModel)]="ladoC"></ion-input>
+    </ion-item>
+
+    <ion-button expand="block" class="ion-margin-top" (click)="ejecutarCalculo()">
+      CALCULAR EL PERÍMETRO
+    </ion-button>
+
+    <div *ngIf="resultado !== null" class="ion-margin-top">
+      <ion-text color="dark">
+        <h3>El perímetro es {{ resultado }} cm</h3>
+      </ion-text>
+    </div>
+  </ion-card-content>
+</ion-card>
